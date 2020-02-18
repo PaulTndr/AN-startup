@@ -1,0 +1,40 @@
+.loadingScreen{
+    overflow: hidden;
+    width:100vw;
+    height:100vh;
+    background-color: #e63a3f;
+    position: relative;
+    .rondLogo{
+        width:10vw;
+        height:10vw;
+        border-radius: 100%;
+        box-shadow: 0px 0px 30px black, 0px 0px 0px black, 0px 0px 0px black;
+        background-color: white;
+        position: absolute;
+        left:45vw;
+        top:38vh;
+        transition-property: width, height, left, top;
+        transition-duration: 0.5s;
+    }
+    img{
+        width:8vw;
+        height:8vw;
+        position: absolute;
+        left: 46vw;
+        top: 40vh;
+        opacity:1;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+    }
+
+    .isFullSizeRond{
+        width:200vw;
+        height:200vw;
+        top:-100vh;
+        left:-50vw;
+    }
+
+    .isFullSizeImg{
+        opacity:0;
+    }
+}

@@ -1,3 +1,6 @@
-<h1>App works !</h1>
+<div *ngIf="!isAnimationClosed" class="loadingScreen">
+    <div [ngClass]="{isFullSizeRond: isLoaded}" class="rondLogo"></div>
+    <img [ngClass]="{isFullSizeImg: isLoaded}" src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/000/962/square_256/angularcli.png"/>
+</div>
 
-<!--<router-outlet></router-outlet>-->
+<router-outlet *ngIf="isAnimationClosed"></router-outlet>
